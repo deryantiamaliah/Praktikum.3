@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jual Sepatu</title>
+
+    <style>     
+
+        .container {
+
+            width: 500px;
+
+            padding: 20px;
+
+            background-color:DB7093;
+
+            margin: auto;
+
+            font-size: larger;
+
+        }
+
+
+
+        h1 {
+
+            text-align: center;
+
+        }
+
+
+
+        .color-options {
+
+            display: flex;
+
+            justify-content: space-around;
+
+            margin-top: 20px;
+
+        }
+
+
+
+        .color-option {
+
+            width: 100px;
+
+            height: 100px;
+
+            border: 1px solid #000;
+
+            cursor: pointer;
+
+        }
+
+
+
+        .color-option img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+        }
+
+
+
+        .order-form {
+
+            margin-top: 20px;
+
+            
+
+        }
+
+
+
+        .form-label {
+
+     
+
+            margin-top: 10px;
+
+        }
+
+
+
+        .order-button {
+
+            display: inline-block;
+
+            padding: 10px 20px;
+
+            background-color: #FFB6C1;
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 18px;
+
+            border-radius: 5px;
+
+            margin-top: 20px;
+
+        }
+
+
+
+        .order-button:hover {
+
+            background-color: #e55200;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 style="font-family: cursive;">Ramoor Store</h1>
+
+        
+
+        <div class="color-options">
+
+            <div class="color-option" data-color="Merah"><img src="foto1.png" alt="Pic1"></div>
+
+            <div class="color-option" data-color="Hijau"><img src="foto2.png" alt="Pic2"></div>
+
+            <div class="color-option" data-color="Biru"><img src="foto3.png" alt="Pic3"></div>
+
+        </div>
+
+
+
+        <form action="coba.html" class="order-form" method="post">
+
+            <label for="spatu" class="form-label">Pilih Sepatu:</label>
+
+            <select id="spatu" name="spatu">
+
+                <option value="Pic1">Pict1</option>
+
+                <option value="Pic2">Pict2</option>
+
+                <option value="Pic3">Pict3</option>
+
+            </select><br>
+
+
+
+            <label for="quantity" class="form-label">Jumlah Sepatu yang Dipesan:</label>
+
+            <input type="number" id="quantity" name="quantity" min="1" required><br>
+
+
+
+            <label for="name" class="form-label">Nama Lengkap:</label>
+
+            <input type="text" id="name" name="name" required><br>
+
+
+
+            <label for="email" class="form-label">E-mail:</label>
+
+            <input type="email" id="email" name="email" required><br>
+
+
+
+            <button class="order-button" type="submit">Pesan</button>
+
+        </form>
+
+    </div>
+
+
+
+   
+
+</body>
+
+</html>
+
